@@ -22,18 +22,31 @@ const styles = (cb) => {
   cb();
 };
 
+const copyImages = () => {
+  return gulp
+    .src(["./src/images/**/*.{png,gif,jpg,svg}"])
+    .pipe(gulp.dest("./dist/images"));
+};
+
 const copyFiles = () => {
   return gulp.src(["./src/php/**/*.php"]).pipe(gulp.dest("./dist"));
 };
 
-const build = gulp.series(clean, gulp.parallel(styles, copyFiles));
+const build = gulp.series(clean, gulp.parallel(styles, copyImages, copyFiles));
 
 const watchFiles = () => {
-  gulp.watch(["./src/php/**/*.php", "./src/scss/**/*.scss"], (cb) => {
-    build();
-    cb();
-  });
+  gulp.watch(
+    [
+      "./src/php/**/*.php",
+      "./src/scss/**/*.scss",
+      "./src/images/**/*/.{png,gif,jpg,svg}",
+    ],
+    (cb) => {
+      build();
+      cb();
+    }
+  );
 };
 
-export { clean, styles, copyFiles, build };
+export { clean, styles, copyImages, copyFiles, build };
 export default watchFiles;

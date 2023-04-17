@@ -8,14 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asul&family=Chivo:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?=$asset_path;?>css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div id="main-nav"></div>
   <div id="main">
-    <h1 class="asul font-weight--bold color--forest">This is a main header</h1>
-    <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, corporis dolore est explicabo enim minus quod similique porro necessitatibus, natus earum laborum ullam reiciendis doloribus et excepturi illum incidunt.</p>
+    <section class="home-leadspace">
+      <h1 class="asul heading--home-leadspace color--orange">Cat&rsquo;s <span class="heading--home-wrap chivo">Meow</span> Resort</h1> 
+    </section>
   </div>
   <footer></footer>
 </body>

@@ -1,10 +1,12 @@
 @use "../foundation" as f;
 
 #main-nav {
+  height: 100vh;
   position: fixed;
+  width: 100vw;
 
-  @include f.respond-to("mobile") {
-    height: 100vh;
+  @include f.respond-to("tablet") {
+    height: auto;
     width: 100vw;
   }
 }
