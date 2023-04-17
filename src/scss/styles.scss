@@ -1,4 +1,5 @@
 @use "foundation" as f;
+@use "components" as c;
 
 body {
   background-color: map-get(f.$colors, "background-gray");
@@ -6,6 +7,8 @@ body {
   font: {
     size: 1rem;
   }
+  margin: 0;
+  padding: 0;
 }
 
 img {

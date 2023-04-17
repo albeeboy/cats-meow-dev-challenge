@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <nav></nav>
+  <div id="main-nav"></div>
   <div id="main">
     <h1 class="asul font-weight--bold color--forest">This is a main header</h1>
     <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, corporis dolore est explicabo enim minus quod similique porro necessitatibus, natus earum laborum ullam reiciendis doloribus et excepturi illum incidunt.</p>
