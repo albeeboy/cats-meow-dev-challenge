@@ -1,12 +1,25 @@
 @use "../foundation" as f;
 
 #main-nav {
+  background-color: map-get(f.$colors, "orange");
   height: 100vh;
+  // left: -87.5vw;
   position: fixed;
-  width: 100vw;
+  width: 87.5vw;
+  z-index: 1000;
+}
 
-  @include f.respond-to("tablet") {
-    height: auto;
-    width: 100vw;
-  }
+.paw-tab {
+  background-color: map-get(f.$colors, "orange");
+  border-radius: 1.5rem;
+  display: flex;
+  height: 4.375rem;
+  left: 0;
+  position: absolute;
+  top: 1.5rem;
+  width: 98vw;
+}
+
+nav {
+  position: relative;
 }

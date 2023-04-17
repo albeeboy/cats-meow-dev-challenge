@@ -12,7 +12,18 @@
 </head>
 
 <body>
-  <div id="main-nav"></div>
+  <div id="main-nav">
+    <div class="paw-tab"></div>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-item nav-item--home">Home</li>
+        <li class="nav-item nav-item--about-us">About Us</li>
+        <li class="nav-item nav-item--stay">Stay</li>
+        <li class="nav-item nav-item--grooming">Grooming</li>
+        <li class="nav-item nav-item--party">Party</li>
+      </ul>
+    </nav>
+  </div>
   <div id="main">
     <section class="home-leadspace">
       <h1 class="asul heading--home-leadspace color--orange">Cat&rsquo;s <span class="heading--home-wrap chivo">Meow</span> Resort</h1> 
