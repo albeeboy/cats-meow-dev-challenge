@@ -1,0 +1,29 @@
+@use "variables" as var;
+
+// font declarations
+@mixin asul {
+  font: {
+    family: "Asul", sans-serif;
+    weight: 400;
+    style: normal;
+  }
+}
+
+@mixin chivo {
+  font: {
+    family: "Chivo", sans-serif;
+    weight: 400;
+    style: normal;
+  }
+}
+
+//breakpoints
+@mixin respond-to($bpt) {
+  @if map-has-key(var.$bpts, $bpt) {
+    @media (min-width: map-get(var.$bpts, $bpt)) {
+      @content;
+    }
+  } @else {
+    @warn "Not a valid breakpoint: Available breakpoints are: #{map-keys($bpts)}.";
+  }
+}

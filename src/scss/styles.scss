@@ -1,0 +1,18 @@
+@use "foundation" as f;
+
+body {
+  background-color: map-get(f.$colors, "background-gray");
+  box-sizing: border-box;
+  font: {
+    size: 1rem;
+  }
+}
+
+img {
+  border: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}

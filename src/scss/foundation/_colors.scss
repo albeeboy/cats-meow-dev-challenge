@@ -1,0 +1,19 @@
+// use rules
+@use "variables" as var;
+
+// color classes
+.color {
+  @each $name, $color in var.$colors {
+    &--#{$name} {
+      color: $color;
+    }
+  }
+}
+
+.bgcolor {
+  @each $name, $color in var.$colors {
+    &--#{$name} {
+      background-color: $color;
+    }
+  }
+}

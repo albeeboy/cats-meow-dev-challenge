@@ -1,0 +1,22 @@
+{
+  "name": "cats-meow-dev-challenge",
+  "version": "1.0.0",
+  "description": "Source files for Cat’s Meow dev challenge",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp"
+  },
+  "type": "module",
+  "author": "Alberto Cristancho",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.22",
+    "sass": "^1.62.0"
+  }
+}
