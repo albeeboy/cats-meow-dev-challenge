@@ -14,7 +14,7 @@
 <body id="page-id--stay">
   <div id="main-nav" class="bgcolor--orange">
     <div class="paw-tab bgcolor--orange">
-      <img class="paw-logomark" src="./images/paw.svg" alt="Paw logomark">
+      <a class="paw-button" href="javascript:void(0);"><img class="paw-logomark" src="./images/paw.svg" alt="Paw logomark"></a>
     </div>
     <nav>
       <ul class="nav-menu chivo color--black font-weight--light">
@@ -33,4 +33,6 @@
   </div>
   <footer></footer>
 </body>
+<script src="./js/nav.js"></script>
+<script src="./js/main.js"></script>
 </html>

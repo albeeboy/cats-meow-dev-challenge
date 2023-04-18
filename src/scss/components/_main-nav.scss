@@ -1,11 +1,44 @@
+@use "sass:math";
 @use "../foundation" as f;
 
 #main-nav {
   height: 100vh;
-  // left: -87.5vw;
+  left: -80vw;
   position: fixed;
-  width: 87.5vw;
+  transition: left 0.5s ease-in-out;
+  width: 80vw;
   z-index: 1000;
+
+  @include f.respond-to("mobile") {
+    left: -87.5vw;
+    width: 87.5vw;
+  }
+
+  @include f.respond-to("tablet") {
+    left: -42rem;
+    width: 42rem;
+  }
+
+  @include f.respond-to("desktop") {
+    left: -45rem;
+    width: 45rem;
+  }
+
+  &.nav-open {
+    left: 0;
+
+    @include f.respond-to("mobile") {
+      left: 0;
+    }
+
+    @include f.respond-to("tablet") {
+      left: 0;
+    }
+
+    @include f.respond-to("desktop") {
+      left: 0;
+    }
+  }
 }
 
 .paw-tab {
@@ -18,17 +51,34 @@
   left: 0;
   position: absolute;
   top: 1.5rem;
-  width: 98vw;
+  width: calc(80vw + 2.5rem);
+
+  @include f.respond-to("mobile") {
+    width: calc(87.5vw + 2.5rem);
+  }
+
+  @include f.respond-to("tablet") {
+    width: 42rem + 2.5rem;
+  }
+
+  @include f.respond-to("desktop") {
+    width: 45rem + 2.5rem;
+  }
 }
 
-.paw-logomark {
+.paw-button {
   display: inline-block;
   padding: 0 0.9375rem 0 0;
 }
 
+// .paw-logomark {
+//   display: inline-block;
+// }
+
 nav {
   position: relative;
   padding: 3.75rem 0 0 1.5rem;
+  width: 90%;
 
   ul {
     font-size: 13vw;
@@ -51,5 +101,9 @@ nav {
       font-size: 5rem;
       line-height: 1.25;
     }
+  }
+
+  @include f.respond-to("tablet") {
+    padding-left: 3.75rem;
   }
 }

@@ -22,6 +22,10 @@ const styles = (cb) => {
   cb();
 };
 
+const scripts = () => {
+  return gulp.src(["./src/js/**/*.js"]).pipe(gulp.dest("./dist/js"));
+};
+
 const copyImages = () => {
   return gulp
     .src(["./src/images/**/*.{png,gif,jpg,svg}"])
@@ -32,12 +36,16 @@ const copyFiles = () => {
   return gulp.src(["./src/php/**/*.php"]).pipe(gulp.dest("./dist"));
 };
 
-const build = gulp.series(clean, gulp.parallel(styles, copyImages, copyFiles));
+const build = gulp.series(
+  clean,
+  gulp.parallel(styles, scripts, copyImages, copyFiles)
+);
 
 const watchFiles = () => {
   gulp.watch(
     [
       "./src/php/**/*.php",
+      "./src/js/**/*.js",
       "./src/scss/**/*.scss",
       "./src/images/**/*/.{png,gif,jpg,svg}",
     ],
@@ -48,5 +56,5 @@ const watchFiles = () => {
   );
 };
 
-export { clean, styles, copyImages, copyFiles, build };
+export { clean, styles, scripts, copyImages, copyFiles, build };
 export default watchFiles;
