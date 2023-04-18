@@ -11,6 +11,17 @@ body {
   padding: 0;
 }
 
+#page-id {
+  &--stay {
+    .nav-item--stay {
+      font: {
+        family: "Asul", sans-serif;
+        weight: 400;
+      }
+    }
+  }
+}
+
 img {
   border: 0;
 }

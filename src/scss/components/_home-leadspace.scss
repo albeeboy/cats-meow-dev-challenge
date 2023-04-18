@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "../foundation" as f;
 
-.home-leadspace {
+.stay-leadspace {
   background-image: url("../images/hero-img_1.jpg");
   background-position: bottom left 12%;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 }
 
 .heading {
-  &--home-leadspace {
+  &--hero-leadspace {
     font-size: 24vw;
     letter-spacing: -0.05em;
     line-height: 0.888;
@@ -31,7 +31,7 @@
     }
   }
 
-  &--home-wrap {
+  &--hero-wrap {
     display: block;
     font-weight: 300;
 
