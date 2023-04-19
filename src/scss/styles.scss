@@ -2,7 +2,7 @@
 @use "components" as c;
 
 body {
-  background-color: map-get(f.$colors, "background-gray");
+  background-color: map-get(f.$colors, "taupe");
   box-sizing: border-box;
   font: {
     size: 1rem;
@@ -29,4 +29,12 @@ img {
 section {
   position: relative;
   width: 100%;
+}
+
+#main {
+  padding: 0 1.5em;
+
+  @include f.respond-to("desktop") {
+    padding: 0 2.25rem;
+  }
 }

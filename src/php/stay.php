@@ -27,12 +27,36 @@
     </nav>
   </div>
   <div id="main">
-    <section class="stay-leadspace">
-      <h1 class="asul heading--hero-leadspace color--orange">Cat&rsquo;s <span class="heading--hero-wrap chivo">Meow</span> Resort</h1> 
+    <section class="leadspace-hero">
+      <h1 class="asul leadspace-hero__heading color--orange">Cat&rsquo;s <span class="leadspace-hero__heading-wrap chivo">Meow</span> Resort</h1> 
     </section>
+    <section class="cta-two-col">
+      <div class="cta-two-col__left">
+        <img class="cta-two-col__image" src="" alt="">
+      </div>
+      <div class="cta-two-col__right">
+        <p></p>
+        <div class="button__primary"></div>
+      </div>
+    </section>
+    <?php require 'data/accordion-content__stay.php'; ?>
+    <?php require 'components/accordion-with-image.php'; ?>
+
+    <section class="carousel"></section>
   </div>
   <footer></footer>
 </body>
 <script src="./js/nav.js"></script>
 <script src="./js/main.js"></script>
 </html>
+
+<!-- <section class="accordion-with-image">
+  <h2 class="accordion-with-image__heading chivo color--forest font-weight--normal">Pamper your cat to <span class="asul">Purrrrrrrrrrrfection</span></h2>
+  <?php
+    // require 'data/accordion-content__stay.php';
+    // require 'components/accordion.php';
+  ?>
+  <div class="accordion-with-image__image">
+    <img src="" alt="">
+  </div>
+</section> -->

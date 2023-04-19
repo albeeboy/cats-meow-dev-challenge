@@ -1,0 +1,42 @@
+@use "../foundation" as f;
+
+.accordion {
+  width: 100%;
+  margin: 0 -1.5rem 0 0;
+
+  &__container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      box-sizing: border-box;
+      border: 1px solid map-get(f.$colors, "forest");
+      border-radius: 1.875rem;
+      margin: 0 0 0.75rem 0;
+      padding: 1.25rem 1.5rem;
+      width: 100%;
+
+      label {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        & + input[type="radio"] {
+          display: none;
+
+          &:checked + .accordion__content {
+            max-height: 32rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+}
