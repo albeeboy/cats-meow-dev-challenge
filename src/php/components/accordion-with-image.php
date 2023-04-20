@@ -5,9 +5,9 @@
 ?>
 
 <section class="accordion-with-image">
-  <h2 class="accordion-with-image__heading chivo color--forest font-weight--normal">Pamper your cat to <span class="asul">Purrrrrrrrrrrfection</span></h2>
+  <h2 class="accordion-with-image__heading color--forest font-weight--normal"><?=$accordion_with_image_content['title'];?></h2>
   <?php require 'accordion.php'; ?>
   <div class="accordion-with-image__image">
-    <img src="" alt="">
+    <img src="<?=$accordion_with_image_content['image']['src'];?>" alt="$accordion_with_image_content['image']['alt']" width="100%">
   </div>
 </section>

@@ -1,0 +1,15 @@
+@use "../foundation" as f;
+
+.accordion-with-image {
+  &__heading {
+    font-size: 9.25vw;
+    line-height: 1.2;
+    margin-bottom: 1.875rem;
+  }
+
+  &__image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 100%;
+  }
+}

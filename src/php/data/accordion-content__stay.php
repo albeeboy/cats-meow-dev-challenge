@@ -25,4 +25,13 @@ $accordion_content = [
     'content' => 'Voluptates quibusdam eligendi ea. Odit quisquam temporibus fugit, eligendi pariatur dolore commodi. Quasi fugit iure aliquid, odit rerum, itaque nesciunt magni quo aspernatur tenetur temporibus fugiat rem officiis autem sapiente dignissimos sequi nostrum doloremque nisi. Sed fuga perspiciatis labore laudantium totam, cumque magnam aliquam voluptatum libero id omnis officiis expedita deleniti. Repellendus cumque possimus laudantium iusto incidunt consequatur, quibusdam, neque laboriosam in praesentium numquam ipsam, perspiciatis consequuntur minus aliquid fuga dolore delectus eius perferendis. Obcaecati quo quam magnam similique tenetur animi impedit aperiam corrupti unde, libero deserunt exercitationem minima dignissimos voluptatum eius.'
   ],
 ];
+
+$accordion_with_image_content = [
+  'title' => '<span class="chivo">Pamper your cat</span> <span class="chivo">to</span> <span class="asul">Purrrrrrrrrrrfection</span>',
+  'accordion_content' => $accordion_content,
+  'image' => [
+    'src' => '../images/pamper.jpg',
+    'alt' => 'Pampered cat close up',
+  ],
+];
 ?>

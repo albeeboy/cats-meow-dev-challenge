@@ -2,7 +2,7 @@
 
 .accordion {
   width: 100%;
-  margin: 0 -1.5rem 0 0;
+  margin: 0 -1.5rem 3.75rem 0;
 
   &__container {
     list-style: none;
@@ -28,8 +28,13 @@
 
           &:checked + .accordion__content {
             max-height: 32rem;
+            padding-top: 1.5rem;
           }
         }
+      }
+
+      &:last-child {
+        margin: 0;
       }
     }
   }
@@ -37,6 +42,7 @@
   &__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    padding-top: 0;
+    transition: all 0.5s ease-in-out;
   }
 }
