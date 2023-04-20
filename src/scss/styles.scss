@@ -1,4 +1,5 @@
 @use "foundation" as f;
+@use "elements" as e;
 @use "components" as c;
 
 body {
@@ -32,9 +33,6 @@ section {
 }
 
 #main {
-  padding: 0 1.5em;
-
-  @include f.respond-to("desktop") {
-    padding: 0 2.25rem;
-  }
+  position: relative;
+  width: 100%;
 }

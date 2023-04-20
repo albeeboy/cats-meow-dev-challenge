@@ -6,7 +6,7 @@
   background-position: bottom left 12%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 0 6.25rem -1.5rem;
+  margin: 0 0 6.25rem;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -16,9 +16,9 @@
     height: math.div(100vw, f.$home-hero-ar);
   }
 
-  @include f.respond-to("desktop") {
-    margin: 0 0 0 -2.25rem;
-  }
+  // @include f.respond-to("desktop") {
+  //   margin: 0;
+  // }
 
   &__heading {
     font-size: 24vw;

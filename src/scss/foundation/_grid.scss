@@ -1,0 +1,86 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var.$grid-gutter-x * 0.5;
+  padding-right: var.$grid-gutter-x * 0.5;
+
+  @include m.respond-to("desktop") {
+    padding-left: var.$grid-gutter-x-desktop * 0.5;
+    padding-right: var.$grid-gutter-x-desktop * 0.5;
+  }
+
+  &-fluid {
+    box-sizing: border-box;
+    padding: 0;
+
+    @include m.respond-to("desktop") {
+      padding: 0;
+    }
+  }
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5 * var.$grid-gutter-x;
+  margin-right: -0.5 * var.$grid-gutter-x;
+
+  @include m.respond-to("desktop") {
+    margin-left: -0.5 * var.$grid-gutter-x-desktop;
+    margin-right: -0.5 * var.$grid-gutter-x-desktop;
+  }
+
+  & > * {
+    max-width: 100%;
+    padding-left: var.$grid-gutter-x * 0.5;
+    padding-right: var.$grid-gutter-x * 0.5;
+
+    @include m.respond-to("desktop") {
+      padding-left: var.$grid-gutter-x-desktop * 0.5;
+      padding-right: var.$grid-gutter-x-desktop * 0.5;
+    }
+  }
+}
+
+@each $num, $boxsize, $flex, $width in var.$cols {
+  .col-#{$num} {
+    box-sizing: #{$boxsize};
+    flex: #{$flex};
+    width: $width;
+  }
+}
+
+@include m.respond-to("mobile") {
+  @each $num, $boxsize, $flex, $width in var.$cols {
+    .col-mobile-#{$num} {
+      box-sizing: #{$boxsize};
+      flex: #{$flex};
+      width: $width;
+    }
+  }
+}
+
+@include m.respond-to("tablet") {
+  @each $num, $boxsize, $flex, $width in var.$cols {
+    .col-tablet-#{$num} {
+      box-sizing: #{$boxsize};
+      flex: #{$flex};
+      width: $width;
+    }
+  }
+}
+
+@include m.respond-to("desktop") {
+  @each $num, $boxsize, $flex, $width in var.$cols {
+    .col-desktop-#{$num} {
+      box-sizing: #{$boxsize};
+      flex: #{$flex};
+      width: $width;
+    }
+  }
+}

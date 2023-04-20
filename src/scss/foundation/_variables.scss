@@ -26,3 +26,13 @@ $colors: (
 
 // aspect ratio
 $home-hero-ar: math.div(2878, 1640);
+
+// grid
+$grid-gutter-x: 1.5rem * 2;
+$grid-gutter-y: 0;
+$grid-gutter-x-desktop: 2.25rem * 2;
+$grid-gutter-y-desktop: 0;
+
+$cols: 2 "border-box" "0 0 auto" 16.66666667%, 3 "border-box" "0 0 auto" 25%,
+  4 "border-box" "0 0 auto" 33.33333333%, 6 "border-box" "0 0 auto" 50%,
+  12 "border-box" "0 0 auto" 100%;

@@ -1,0 +1,25 @@
+@use "../foundation" as f;
+
+.button {
+  &__primary {
+    background-color: map-get(f.$colors, "forest");
+    border-radius: 1.5rem;
+    color: map-get(f.$colors, "white");
+    display: block;
+    font: {
+      family: "Chivo", sans-serif;
+      size: 1rem;
+      weight: 600;
+    }
+    line-height: 1.2;
+    padding: 0.9375rem 2rem 0.875rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+    width: fit-content;
+
+    &:hover {
+      background-color: map-get(f.$colors, "orange");
+    }
+  }
+}
