@@ -27,7 +27,7 @@ $accordion_content = [
 ];
 
 $accordion_with_image_content = [
-  'title' => '<span class="chivo">Pamper your cat</span> <span class="chivo">to</span> <span class="asul">Purrrrrrrrrrrfection</span>',
+  'heading' => '<div class="text-align--left"><span class="chivo">Pamper your cat</span> <span class="chivo">to</span></div><div class="text-align--left text-align-desktop--right"><span class="asul">Purrrrrrrrrrrfection</span></div>',
   'accordion_content' => $accordion_content,
   'image' => [
     'src' => '../images/pamper.jpg',

@@ -11,38 +11,62 @@
     width: 100%;
 
     li {
+      background-color: transparent;
       box-sizing: border-box;
       border: 1px solid map-get(f.$colors, "forest");
       border-radius: 1.875rem;
       margin: 0 0 0.75rem 0;
-      padding: 1.25rem 1.5rem;
+      padding: 1rem 1.5rem;
+      transition: all 0.4s ease-in-out;
       width: 100%;
 
-      label {
+      .accordion__label {
         align-items: center;
+        color: map-get(f.$colors, "forest");
+        cursor: pointer;
         display: flex;
         flex-flow: row nowrap;
+        height: 1.625rem;
         justify-content: space-between;
-        & + input[type="radio"] {
-          display: none;
-
-          &:checked + .accordion__content {
-            max-height: 32rem;
-            padding-top: 1.5rem;
-          }
-        }
       }
 
       &:last-child {
         margin: 0;
       }
+
+      &.open-element {
+        background-color: map-get(f.$colors, "forest");
+
+        .accordion__label {
+          color: map-get(f.$colors, "white");
+        }
+
+        .svg__plus {
+          .cls-x {
+            fill: map-get(f.$colors, "white");
+          }
+          .cls-y {
+            fill: transparent;
+          }
+        }
+
+        .accordion__content {
+          max-height: 32rem;
+          padding-top: 1.5rem;
+
+          p {
+            color: map-get(f.$colors, "white");
+          }
+        }
+      }
     }
   }
 
   &__content {
+    color: map-get(f.$colors, "forest");
     max-height: 0;
     overflow: hidden;
     padding-top: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 }

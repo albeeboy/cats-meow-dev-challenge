@@ -29,7 +29,7 @@
   <div id="main">
     <section class="leadspace-hero">
       <div class="container-fluid">
-        <h1 class="asul leadspace-hero__heading color--orange">Cat&rsquo;s <span class="leadspace-hero__heading-wrap chivo">Meow</span> Resort</h1>
+        <h1 class="asul leadspace-hero__heading color--orange">Cat&rsquo;s<span class="leadspace-hero__heading-wrap chivo">Meow</span>Resort</h1>
       </div>
     </section>
     <!-- cta-two-col component -->

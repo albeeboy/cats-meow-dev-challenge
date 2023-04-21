@@ -8,6 +8,10 @@ footer {
   padding: 3.75rem 0 2.25rem;
   position: relative;
   width: 100%;
+
+  @include f.respond-to("tablet") {
+    padding-bottom: 1rem;
+  }
 }
 
 .footer {
@@ -16,6 +20,40 @@ footer {
   }
 
   &__heading {
-    font-size: 8vw;
+    font-size: 2.125rem;
+    margin: 0 0 2rem 0;
+
+    @include f.respond-to("desktop") {
+      font-size: 2.75rem;
+    }
+  }
+
+  &__social-media-panel {
+    margin: 0 0 3.25rem 0;
+
+    a {
+      line-height: 0;
+      padding-right: 2.25rem;
+    }
+  }
+
+  &__utility-heading {
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;
+  }
+
+  &__utility-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 0 0.9375rem 0;
+
+      a {
+        text-decoration: none;
+        color: map-get(f.$colors, "white");
+      }
+    }
   }
 }

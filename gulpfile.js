@@ -4,6 +4,7 @@ import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import autoprefixer from "autoprefixer";
 import postcss from "gulp-postcss";
+import concat from "gulp-concat";
 
 const sass = gulpSass(dartSass);
 
@@ -23,7 +24,10 @@ const styles = (cb) => {
 };
 
 const scripts = () => {
-  return gulp.src(["./src/js/**/*.js"]).pipe(gulp.dest("./dist/js"));
+  return gulp
+    .src(["./src/js/**/*.js"])
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest("./dist/js"));
 };
 
 const copyImages = () => {

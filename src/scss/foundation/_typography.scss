@@ -63,18 +63,40 @@ strong {
   }
 }
 
-.text-align {
-  &--center {
-    text-align: center;
-  }
-
-  &--left {
-    text-align: left;
-  }
-
-  &--right {
-    text-align: right;
+@each $option in var.$text-align-options {
+  .text-align {
+    &--#{$option} {
+      text-align: #{$option};
+    }
   }
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Asul&family=Chivo:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@include m.respond-to("mobile") {
+  @each $option in var.$text-align-options {
+    .text-align-mobile {
+      &--#{$option} {
+        text-align: #{$option};
+      }
+    }
+  }
+}
+
+@include m.respond-to("tablet") {
+  @each $option in var.$text-align-options {
+    .text-align-tablet {
+      &--#{$option} {
+        text-align: #{$option};
+      }
+    }
+  }
+}
+
+@include m.respond-to("desktop") {
+  @each $option in var.$text-align-options {
+    .text-align-desktop {
+      &--#{$option} {
+        text-align: #{$option};
+      }
+    }
+  }
+}

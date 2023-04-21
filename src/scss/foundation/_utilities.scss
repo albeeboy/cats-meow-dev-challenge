@@ -1,0 +1,33 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+// display utilities
+@each $option in var.$display-options {
+  .display--#{$option} {
+    display: #{$option};
+  }
+}
+
+@include m.respond-to("mobile") {
+  @each $option in var.$display-options {
+    .display-mobile--#{$option} {
+      display: #{$option};
+    }
+  }
+}
+
+@include m.respond-to("tablet") {
+  @each $option in var.$display-options {
+    .display-tablet--#{$option} {
+      display: #{$option};
+    }
+  }
+}
+
+@include m.respond-to("desktop") {
+  @each $option in var.$display-options {
+    .display-desktop--#{$option} {
+      display: #{$option};
+    }
+  }
+}

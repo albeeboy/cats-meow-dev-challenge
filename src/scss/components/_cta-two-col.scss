@@ -11,16 +11,40 @@
     margin: 0 0 1.875rem 0;
     overflow: hidden;
     width: 100%;
+
+    @include f.respond-to("desktop") {
+      margin-bottom: 0;
+    }
+  }
+
+  &__large-viewport-heading {
+    font-size: 5rem;
+    margin-bottom: -3rem;
   }
 
   &__heading {
-    font-size: 2.625rem;
+    font-size: 1.75rem;
     margin: 0 0 1.875rem 0;
+
+    @include f.respond-to("mobile") {
+      font-size: 2.25rem;
+    }
+
+    @include f.respond-to("tablet") {
+      font-size: 2.625rem;
+    }
   }
 
   &__intro {
     font-size: 1.25rem;
     line-height: 1.5;
     margin: 0 0 1.875rem 0;
+  }
+
+  &__left,
+  &__right {
+    @include f.respond-to("desktop") {
+      align-items: center;
+    }
   }
 }
