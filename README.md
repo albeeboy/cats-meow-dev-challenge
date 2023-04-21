@@ -16,7 +16,7 @@ Last modified: 21 April 2023
 ## Installation
 
 ```sh
-#navigate to the directory where you wish to install the repository
+# navigate to the directory where you wish to install the repository
 git clone https://github.com/albeeboy/cats-meow-dev-challenge
 cd cats-meow-dev-challenge
 nvm use
