@@ -23,7 +23,7 @@ nvm use
 npm install
 ```
 
-_Note: there are some vulnerabilities that will hopefully get sorted out with gulp_
+_Note: there are some `gulp` vulnerabilities that will hopefully get sorted out soon._
 
 ## Compiling styles and copying all files to `dist` folder
 
@@ -46,4 +46,4 @@ Point your local server environment to the compiled `dist` folder
 
 Due to time limitations, the contents of the `dist` folder are synced to this hosted site directory: https://cristancho.net/cats-meow-dev-challenge/. However, any PHP enabled web server will do. Use either `sftp` on the command line of an FTP client of your choice to connect to your server and upload the files.
 
-In future, it would be a good idea to set up a pipeline script that installs dependencies, generates the dist folder and copies it to your web server of choice. There are many ways to do this, depending on your hosting plan,
+In future, it would be a good idea to set up a pipeline script that installs dependencies, generates the dist folder and copies it to your web server of choice. There are many ways to do this, depending on your hosting plan.
