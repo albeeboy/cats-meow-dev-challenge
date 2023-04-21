@@ -15,7 +15,7 @@
       </div>
       <div class="col-12 col-tablet-6 accordion-with-image__right">
         <div class="accordion-with-image__image">
-          <img src="<?=$accordion_with_image_content['image']['src'];?>" alt="$accordion_with_image_content['image']['alt']" width="100%">
+          <img src="<?=$accordion_with_image_content['image']['src'];?>" alt="<?=$accordion_with_image_content['image']['alt'];?>" width="100%">
         </div>
       </div>
     </div>

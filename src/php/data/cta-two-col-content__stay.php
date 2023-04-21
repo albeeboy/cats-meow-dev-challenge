@@ -5,7 +5,7 @@
 
 $cta_two_col_content = [
   'image' => [
-    'src' => '../images/cat-friends.jpg',
+    'src' => 'images/cat-friends.jpg',
     'alt' => 'Cat friends',
   ],
   'large_viewport_heading' => '<div class="text-align--center">Where <span class="asul">cats</span> come to</div><div class="text-align--right"><span class="asul">Play</span> and <span class="asul">Stay</span></div>',
