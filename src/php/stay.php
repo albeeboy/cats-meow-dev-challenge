@@ -1,5 +1,5 @@
   <?php require 'components/header.php'; ?>
-  
+
   <title>Cat&rsquo;s Meow Resort: Stay</title>
 </head>
 
@@ -33,7 +33,34 @@
     <?php require 'components/accordion-with-image.php'; ?>
     
     <!-- carousel component -->
-    <section class="carousel"></section>
+    <section class="carousel">
+      <div class="container">
+        <div class="row justify-content--flex-end">
+          <div class="carousel__nav">
+            <button class="carousel__button carousel__button--button-left"><?php require 'svg/left_arrow.php'; ?></button>
+            <button class="carousel__button carousel__button--button-right"><?php require 'svg/right_arrow.php'; ?></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide">
+                <img class="carousel__image" src="./images/carousel_img_1.png" alt="Blurry gray cat">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="./images/carousel_img_2.png" alt="Cat on high catwalk">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="./images/carousel_img_3.png" alt="Cat gym">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="./images/carousel_img_4.png" alt="Playful kitten">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <?php require 'components/footer.php'; ?>

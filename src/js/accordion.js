@@ -1,5 +1,4 @@
 // accordion JS functions
-
 (function () {
   const openAccordionEl = (evt) => {
     evt.stopImmediatePropagation();

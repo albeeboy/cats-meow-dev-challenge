@@ -1,5 +1,4 @@
 // nav JS functions
-
 (function () {
   const openNav = (evt) => {
     evt.stopImmediatePropagation();

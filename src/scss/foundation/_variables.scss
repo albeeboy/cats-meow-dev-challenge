@@ -43,3 +43,11 @@ $display-options: "block", "inline", "inline-block", "flex", "inline-flex",
 
 // typography
 $text-align-options: "left", "center", "right";
+
+// flexbox
+$justify-content: "flex-start", "flex-end", "center", "space-between",
+  "space-around", "space-evenly";
+
+// carousel
+$carousel-img-ratio: math.div(864, 1080);
+$carousel-img-ratio-recip: math.div(1, $carousel-img-ratio);

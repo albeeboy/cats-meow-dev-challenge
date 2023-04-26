@@ -31,3 +31,34 @@
     }
   }
 }
+
+// flex justify
+@each $option in var.$justify-content {
+  .justify-content--#{$option} {
+    justify-content: #{$option};
+  }
+}
+
+@include m.respond-to("mobile") {
+  @each $option in var.$justify-content {
+    .justify-content-mobile--#{$option} {
+      justify-content: #{$option};
+    }
+  }
+}
+
+@include m.respond-to("tablet") {
+  @each $option in var.$justify-content {
+    .justify-content-tablet--#{$option} {
+      justify-content: #{$option};
+    }
+  }
+}
+
+@include m.respond-to("desktop") {
+  @each $option in var.$justify-content {
+    .justify-content-desktop--#{$option} {
+      justify-content: #{$option};
+    }
+  }
+}
